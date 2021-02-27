@@ -1,0 +1,446 @@
+# read csv
+import pandas as pd
+import numpy as np
+
+Column_0 = []
+
+# Blank rows to start
+for x in range(1,1401):
+    cell = ' '
+    Column_0.append(cell)
+
+# In order to add ~15,000 phalanx, add 938 rows and 16 columns mimicking 16x16 formation
+for x in range(1,939):
+    cell = 'Phalanx'
+    Column_0.append(cell)
+
+# Create dataframe from list with headers (listtodf)
+df_Troops = pd.DataFrame()
+df_Troops['a'] = Column_0
+
+# adding 16 columns of phalanx aka duplicating first column to get a total of 16 columns
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 16
+df_First_16 = df_Troops.assign(**{x: df_Troops.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_First_16)
+
+
+
+
+
+Column_17 =[]
+
+# Blank rows to start
+for x in range(1,1201):
+    cell = ' '
+    Column_17.append(cell)
+    
+# In order to add 6,000 Light Infantry, add 2 sets of 300 rows with 10 columns
+for x in range(1,201):
+    cell = 'Light Infantry'
+    Column_17.append(cell)
+    
+# Blank rows to start
+for x in range(1,939):
+    cell = ' '
+    Column_17.append(cell)
+    
+for x in range(1,301):
+    cell = 'Light Infantry'
+    Column_17.append(cell)
+
+# Create dataframe from list with headers (listtodf)
+df_Troops_2 = pd.DataFrame()
+df_Troops_2['a'] = Column_17
+
+# adding 16 columns of phalanx aka duplicating first column to get a total of 16 columns
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_17_through_26 = df_Troops_2.assign(**{x: df_Troops_2.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_17_through_26)
+
+
+
+
+
+
+Column_27 =[]
+
+# Blank rows to start
+for x in range(1,1201):
+    cell = ' '
+    Column_27.append(cell)
+    
+# In order to add 3,000 Light Infantry and 3,000 Hoplites, add 2 sets of 300 rows with 10 columns.
+# To add 2 sets of 200 peltists add 2 sets of 20 rows with 10 columns
+for x in range(1,201):
+    cell = 'Light Infantry'
+    Column_27.append(cell)
+
+for x in range(1,21):
+    cell = 'Peltists'
+    Column_27.append(cell)
+    
+# Blank rows to start
+for x in range(1,919):
+    cell = ' '
+    Column_27.append(cell)
+    
+for x in range(1,301):
+    cell = 'Hoplites'
+    Column_27.append(cell)
+
+for x in range(1,21):
+    cell = 'Peltists'
+    Column_27.append(cell)
+
+# Create dataframe from list with headers (listtodf)
+df_Troops_3 = pd.DataFrame()
+df_Troops_3['a'] = Column_27
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_27_through_36 = df_Troops_3.assign(**{x: df_Troops_3.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_27_through_36)
+
+
+
+
+
+
+
+
+Column_37 = []
+
+# Blank rows to start
+for x in range(1,1401):
+    cell = ' '
+    Column_37.append(cell)
+
+# In order to add ~15,000 phalanx, add 938 rows and 16 columns mimicking 16x16 formation
+for x in range(1,939):
+    cell = 'Phalanx'
+    Column_37.append(cell)
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_4 = pd.DataFrame()
+df_Troops_4['a'] = Column_37
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 16
+df_37_through_52 = df_Troops_4.assign(**{x: df_Troops_4.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_37_through_52)
+
+
+
+
+
+
+
+
+Column_53 = []
+
+# Blank rows to start
+for x in range(1,1301):
+    cell = ' '
+    Column_53.append(cell)
+
+# In order to get 1,000 cavalry, 100 rows with 10 columns
+for x in range(1,101):
+    cell = 'Cavalry'
+    Column_53.append(cell)
+    
+#blank for length of Phalanx
+for x in range(1,939):
+    cell = ' '
+    Column_53.append(cell)
+    
+# In order to get 6,000 cavalry, 600 rows with 10 columns
+for x in range(1,601):
+    cell = 'Cavalry'
+    Column_53.append(cell)
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_5 = pd.DataFrame()
+df_Troops_5['a'] = Column_53
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_53_through_62 = df_Troops_5.assign(**{x: df_Troops_5.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_53_through_62)
+
+
+
+
+
+
+
+
+Column_63 = []
+
+# Blank rows to start
+for x in range(1,1391):
+    cell = ' '
+    Column_63.append(cell)
+
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_6 = pd.DataFrame()
+df_Troops_6['a'] = Column_63
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_63_through_72 = df_Troops_6.assign(**{x: df_Troops_6.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_63_through_72)
+
+
+
+
+
+# Persian Army
+
+
+Column_73 = []
+
+# Blank rows to start
+for x in range(1,2101):
+    cell = ' '
+    Column_73.append(cell)
+
+# In order to get 5,000 cavalry, 500 rows with 10 columns
+for x in range(1,501):
+    cell = 'Cavalry'
+    Column_73.append(cell)
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_7 = pd.DataFrame()
+df_Troops_7['a'] = Column_73
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_73_through_82 = df_Troops_7.assign(**{x: df_Troops_7.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_73_through_82)
+
+
+
+
+
+
+
+Column_83 = []
+
+# Blank rows to start
+for x in range(1,301):
+    cell = ' '
+    Column_83.append(cell)
+    
+# In order to get 4,000 cavalry, 400 rows with 10 columns
+for x in range(1,401):
+    cell = 'Cavalry'
+    Column_83.append(cell)
+    
+# In order to get 100 Scythed Chariots, 10 rows with 10 columns
+for x in range(1,11):
+    cell = 'Scythed Chariots'
+    Column_83.append(cell)
+
+# Blank rows to start
+for x in range(1,1091):
+    cell = ' '
+    Column_83.append(cell)
+    
+# In order to get 5,000 Greek Mercenaries, 500 rows with 10 columns
+for x in range(1,501):
+    cell = 'Greek Mercenaries'
+    Column_83.append(cell)
+    
+# Blank rows to start
+for x in range(1,101):
+    cell = ' '
+    Column_83.append(cell)
+    
+# In order to get 5,000 Greek Mercenaries, 500 rows with 10 columns
+for x in range(1,501):
+    cell = 'Greek Mercenaries'
+    Column_83.append(cell)
+    
+    
+# Blank rows to start
+for x in range(1,1091):
+    cell = ' '
+    Column_83.append(cell)
+    
+# In order to get 100 Scythed Chariots, 10 rows with 10 columns
+for x in range(1,11):
+    cell = 'Scythed Chariots'
+    Column_83.append(cell)
+    
+# In order to get 4,000 cavalry, 400 rows with 10 columns
+for x in range(1,401):
+    cell = 'Cavalry'
+    Column_83.append(cell)
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_8 = pd.DataFrame()
+df_Troops_8['a'] = Column_83
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_83_through_92 = df_Troops_8.assign(**{x: df_Troops_8.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_83_through_92)
+
+
+
+
+
+Column_93 = []
+
+# # Blank rows to start
+# for x in range(1,101):
+#     cell = ' '
+#     Column_93.append(cell)
+    
+# In order to get 3,000 infantry, 300 rows with 10 columns
+for x in range(1,301):
+    cell = 'Infantry'
+    Column_93.append(cell)
+    
+# In order to get 15,000 cavalry, 1500 rows with 10 columns
+for x in range(1,1501):
+    cell = 'Cavalry'
+    Column_93.append(cell)
+    
+# Blank rows to start
+for x in range(1,1101):
+    cell = ' '
+    Column_93.append(cell)
+    
+# In order to get 15,000 cavalry, 1500 rows with 10 columns
+for x in range(1,1501):
+    cell = 'Cavalry'
+    Column_93.append(cell)
+
+# In order to get 3,000 infantry, 300 rows with 10 columns
+for x in range(1,401):
+    cell = 'Infantry'
+    Column_93.append(cell)
+    
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_9 = pd.DataFrame()
+df_Troops_9['a'] = Column_93
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_93_through_102 = df_Troops_9.assign(**{x: df_Troops_9.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_93_through_102)
+
+
+
+
+
+
+Column_103 = []
+
+# Blank rows to start
+for x in range(1,1726):
+    cell = ' '
+    Column_103.append(cell)
+    
+# In order to get 750 infantry, 75 rows with 10 columns
+for x in range(1,76):
+    cell = 'Archers'
+    Column_103.append(cell)
+    
+# In order to get 5,000 Persian Immortals, 500 rows with 10 columns
+for x in range(1,501):
+    cell = 'Persian Immortals'
+    Column_103.append(cell)
+    
+# Blank rows to start
+for x in range(1,101):
+    cell = ' '
+    Column_103.append(cell)
+    
+# In order to get 5,000 Persian Immortals, 500 rows with 10 columns
+for x in range(1,501):
+    cell = 'Persian Immortals'
+    Column_103.append(cell)
+    
+# In order to get 750 infantry, 75 rows with 10 columns
+for x in range(1,76):
+    cell = 'Archers'
+    Column_103.append(cell)
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_10 = pd.DataFrame()
+df_Troops_10['a'] = Column_103
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_103_through_112 = df_Troops_10.assign(**{x: df_Troops_10.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_103_through_112)
+
+
+
+
+
+
+
+
+
+
+Column_113 = []
+
+# Blank rows to start
+# for x in range(1,101):
+#     cell = ' '
+#     Column_113.append(cell)
+    
+# In order to get 47,000 infantry, 4700 rows with 10 columns
+for x in range(1,4701):
+    cell = 'Infantry'
+    Column_113.append(cell)
+    
+    
+# Create dataframe from list with headers (listtodf)
+df_Troops_11 = pd.DataFrame()
+df_Troops_11['a'] = Column_113
+
+# adding 10 columns of troops above
+from string import ascii_lowercase
+# where n is the number of columns you want
+n = 10
+df_113_through_122 = df_Troops_11.assign(**{x: df_Troops_11.iloc[:, 0] for x in ascii_lowercase[:n]})
+print(df_113_through_122)
+
+
+
+
+
+
+Combined_df =pd.concat([df_First_16, df_17_through_26,df_27_through_36,df_37_through_52,df_53_through_62,df_63_through_72,df_73_through_82,df_83_through_92,df_93_through_102,df_103_through_112,df_113_through_122], axis=1)
+display(Combined_df)
+
+
+
+# to csv:
+Combined_df.to_csv(r"C:\Users\PATH\Gaugamela\G_v36.csv",index=False)
